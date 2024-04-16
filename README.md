@@ -1,5 +1,5 @@
 
-# TWC Contact Portal
+# TWC Contact Portal Client-side App
 
 
 ## Tech Stack
