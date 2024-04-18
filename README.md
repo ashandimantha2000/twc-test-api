@@ -21,20 +21,20 @@ Add .env file to root of the server directory
 Define port as
 
 ```bash
-export const PORT = 5555;
+PORT=5555
 ```
 Add connection string as
 
 ```bash
-export const MONGO_URI = 'mongodb+srv://root:root@twc-db.naymvey.mongodb.net/twc?retryWrites=true&w=majority&appName=TWC-DB';
+MONGO_URI = 'mongodb+srv://root:root@twc-db.naymvey.mongodb.net/twc?retryWrites=true&w=majority&appName=TWC-DB';
 ```
 Define JSON Web Token secrect as
 ```bash
-export const JWT_SECRET=yourSuperSecretKey
+JWT_SECRET=yourSuperSecretKey
 ```
 Define SALT as
 ```bash
-export const SALT = 10;
+SALT = 10;
 ```
 Install dependencies
 
