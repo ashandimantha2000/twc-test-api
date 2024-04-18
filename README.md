@@ -1,5 +1,5 @@
 
-# TWC Contact Portal Servre-side API
+# TWC Contact Portal Server-side API
 
 ## Tech Stack
 
