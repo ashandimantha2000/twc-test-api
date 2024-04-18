@@ -30,7 +30,7 @@ export const MONGO_URI = 'mongodb+srv://root:root@twc-db.naymvey.mongodb.net/twc
 ```
 Define JSON Web Token secrect as
 ```bash
-export const JWT_SECRET = 'secret';
+export const JWT_SECRET=yourSuperSecretKey
 ```
 Define SALT as
 ```bash
