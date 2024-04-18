@@ -32,5 +32,5 @@ mongoose.connect(MONGO_URI).then(() => {
 });
 
 //Routes
-app.use("api/auth", authRoute);
-app.use("api/user", userRoute);
+app.use("/", authRoute);
+app.use("/", userRoute);
