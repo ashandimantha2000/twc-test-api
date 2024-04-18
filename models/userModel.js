@@ -22,16 +22,16 @@ const userSchema = new mongoose.Schema({
 
 export const User = mongoose.model("User", userSchema);
 
-userSchema.methods.generateAuthToken = function () {
-  const token = jwt.sign(
-    { _id: this._id, email: this.email },
-    process.env.JWT_SECRET,
-    {
-      expiresIn: "10d",
-    }
-  );
-  return token;
-};
+// userSchema.methods.generateAuthToken = function () {
+//   const token = jwt.sign(
+//     { _id: this._id, email: this.email },
+//     process.env.JWT_SECRET,
+//     {
+//       expiresIn: "10d",
+//     }
+//   );
+//   return token;
+// };
 
 const validate = (data) => {
   const schema = Joi.object({
