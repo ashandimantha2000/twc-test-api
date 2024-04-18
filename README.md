@@ -1,6 +1,13 @@
 
 # TWC Contact Portal Servre-side API
-
+## Resources
+export const PORT = 5555;
+<br>
+export const MONGO_URI = 'mongodb+srv://root:root@twc-db.naymvey.mongodb.net/twc?retryWrites=true&w=majority&appName=TWC-DB';
+<br>
+export const JWT_SECRET = 'secret';
+<br>
+export const SALT = 10;
 
 ## Tech Stack
 
@@ -29,8 +36,14 @@ Add connection string as
 ```bash
 DATABASE = MONGODB_CONNECTION_STRING_HERE'
 ```
-Define JSON Web Token secrect as JWT = 'JWT_SECRET'
-
+Define JSON Web Token secrect as
+```bash
+JWT = 'JWT_SECRET'
+```
+Define SALT as
+```bash
+export const SALT = 10;
+```
 Install dependencies
 
 ```bash
