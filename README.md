@@ -1,13 +1,5 @@
 
 # TWC Contact Portal Servre-side API
-## Resources
-export const PORT = 5555;
-<br>
-export const MONGO_URI = 'mongodb+srv://root:root@twc-db.naymvey.mongodb.net/twc?retryWrites=true&w=majority&appName=TWC-DB';
-<br>
-export const JWT_SECRET = 'secret';
-<br>
-export const SALT = 10;
 
 ## Tech Stack
 
@@ -29,16 +21,16 @@ Add .env file to root of the server directory
 Define port as
 
 ```bash
-PORT = '5555'
+export const PORT = 5555;
 ```
 Add connection string as
 
 ```bash
-DATABASE = MONGODB_CONNECTION_STRING_HERE'
+export const MONGO_URI = 'mongodb+srv://root:root@twc-db.naymvey.mongodb.net/twc?retryWrites=true&w=majority&appName=TWC-DB';
 ```
 Define JSON Web Token secrect as
 ```bash
-JWT = 'JWT_SECRET'
+export const JWT_SECRET = 'secret';
 ```
 Define SALT as
 ```bash
