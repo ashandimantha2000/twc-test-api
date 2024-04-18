@@ -4,6 +4,8 @@ import mongoose from "mongoose";
 import cors from "cors";
 import contactRoute from "./routes/contactRoute.js";
 
+import authRoute from "./routes/auth.js";
+import userRoute from "./routes/user.js";
 
 const app = express();
 
@@ -21,13 +23,14 @@ app.get("/", (req, res) => {
 //route for the contact details
 app.use("/contacts", contactRoute);
 
-
 //connect to the database and listen to the port
-mongoose
-  .connect(MONGO_URI)
-    .then(() => {
-        app.listen(PORT, () => {
-            console.log(`Server is running on port ${PORT}`);
-        });
-        console.log("MongoDB connected Successfully");
-    })
+mongoose.connect(MONGO_URI).then(() => {
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+  console.log("MongoDB connected Successfully");
+});
+
+//Routes
+app.use("/", authRoute);
+app.use("/", userRoute);
